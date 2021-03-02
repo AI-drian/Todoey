@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+  .header {
+    background-color: rgb(18, 36, 75);
+    padding: 60px 60px;
+    color: rgb(172, 170, 170);
+    text-align: center;
+  }
+
+  h1{
+    padding-bottom: 10px;
+  }
+  
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #input {
+    background: rgb(218, 217, 217);
+    color: rgb(0, 0, 0);
+    width: 40%;
+    font-size: 20px;
+  }
+  
+  .addButton {
+    padding: 7px;
+    background: rgb(172, 170, 170);
+    color: rgb(194, 54, 54);
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .addButton:hover {
+    background-color: rgb(133, 133, 133);
+    color:rgb(138, 41, 41);
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background:  rgb(32, 63, 131);
+    color: rgb(172, 170, 170);
+    font-size: 18px;
+    transition: 0.2s;
+    cursor: pointer;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  ul li:hover {
+    background-color: rgb(36, 74, 155);
+  }
+  
+  ul li.checked {
+    text-decoration: line-through;
+    background-color:rgb(36, 74, 155);
+  }
+  
+  .checked::before {
+    content: "\2713";
+    position: absolute;
+    font-size: 18px;
+    left: 15px;
+    font-weight: bolder;
+    color:rgb(172, 170, 170);
+  }
+  
+  .deleteButton {
+    background-color: rgba(172, 170, 170);
+    position: absolute;
+    color:rgb(194, 54, 54);
+    opacity: 0.5;
+    right: 0;
+    top: 0;
+    padding: 12px 15px 12px 15px;
+  }
+  
+  .deleteButton:hover {
+    background-color: rgba(107, 107, 107);
+    color:rgb(194, 54, 54);
+    opacity: 0.5;
+  }

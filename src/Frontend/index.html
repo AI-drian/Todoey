@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todoey</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>My to-do list</h1>
+        <input type="text" id="input" placeholder="What to do...">
+        <span onclick="addItem()" class="addButton">Add to list</span>
+        <button onclick = "getItems()" class ="addButton">Get to-do's!</button>
+    </div>
+   
+
+    <ul id="itemList">
+    </ul>
+
+</body>
+
+</html>
